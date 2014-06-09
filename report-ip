@@ -4,6 +4,7 @@
 #Be sure you have mailx (sudo apt-get install heirloom-mailx
 #Edit cron with crontab -e and then at the bottom of the file add @reboot  /path/to/this-script
 #Can also be triggered with init.d and rc.local
+#May have to chmod +x after copy
 
 ETH=$(ip addr list eth0 |grep inet |cut -d' ' -f6|cut -d/ -f1)
 WLAN=$(ip addr list wlan0 |grep inet |cut -d' ' -f6|cut -d/ -f1)
