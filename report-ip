@@ -32,7 +32,6 @@ do
  echo $BOTH2 | mailx -s "$HOSTNAME Has New Public Address" DESTINATION
  unset initialpub
  initialpub=$reported
- curl "https://dynamicdns.park-your-domain.com/update?host=@&domain=aneis.ch&password=7f1a5e19575740bf98a855c42a775807&ip=`curl -s echoip.com`"
 fi
 done
 
