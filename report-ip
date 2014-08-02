@@ -1,5 +1,4 @@
 #!/bin/sh
-<<<<<<< HEAD
 HOSTNAME=$(hostname)
 initialpub=$(curl icanhazip.com)
 reported=$(curl icanhazip.com)
