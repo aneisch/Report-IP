@@ -31,5 +31,5 @@ do
 fi
 done
 
-echo $BOTH | mailx -v -s "$HOSTNAME is online." -S smtp-use-starttls -S ssl-verify=ignore -S smtp-auth=login -S smtp=smtp.gmail.com:587 -S from=pi@pi.com -S smtp-auth-user=YOUR-GMAIL-ADDRESS -S smtp-auth-password="YOUR-GMAIL-PASSWORD" DESTINATION-EMAIL
+echo "$BOTH" | mailx -v -s "$HOSTNAME is online." -S smtp-use-starttls -S ssl-verify=ignore -S smtp-auth=login -S smtp=smtp.gmail.com:587 -S from=pi@pi.com -S smtp-auth-user="YOUR-GMAIL-ADDRESS" -S smtp-auth-password="YOUR-GMAIL-PASSWORD" "DESTINATION-EMAIL"
 #Be sure to include "@gmail.com" in the auth user section, also keep the quotes around your password.
